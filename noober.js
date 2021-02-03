@@ -80,27 +80,26 @@ function pushNewArray(ride) {
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-  // All rides
-  document.querySelector("#all-filter").addEventListener("click", async function (event) {
+
+  document.querySelector("#all-filter").addEventListener("click", async function (event) {   // All rides
     console.log("All-Filter button clicked");
 
     // API Call
-    // let response = await fetch(`https://kiei451.com/api/rides.json`)
-    // let json = await response.json()
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
+    let rideArray = json
 
-    // let rideArray = json
-
-    // for (let i = 0; i < rideArray.length; i++) {
-    //   let ride = rideArray[i]
-    //   levelOfService(ride)
-    //   renderRides(rideArray)
-    // }
+    for (let i = 0; i < rideArray.length; i++) {
+      let ride = rideArray[i]
+      levelOfService(ride)
+      renderRides(rideArray)
+    }
 
 
   })
 
-  // Noober Pool
-  document.querySelector("#noober-pool-filter").addEventListener("click", async function (event) {
+
+  document.querySelector("#noober-pool-filter").addEventListener("click", async function (event) {   // Noober Pool
     console.log("Noober Pool button clicked");
 
     // API Call
@@ -116,69 +115,64 @@ window.addEventListener('DOMContentLoaded', function () {
       if (levelOfService(ride) == 'Noober Pool') {     // inherit levelOfService from levelOfService function
         pushNewArray(ride)
       }
-
-      // renderRides(rideArray)
     }
-
-
   })
 
-  // Noober Purple
-  document.querySelector("#noober-purple-filter").addEventListener("click", async function (event) {
+  document.querySelector("#noober-purple-filter").addEventListener("click", async function (event) {  // Noober Purple
     console.log("Noober Purple button clicked");
 
     // API Call
-    // let response = await fetch(`https://kiei451.com/api/rides.json`)
-    // let json = await response.json()
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
 
-    // let rideArray = json
+    let rideArray = json
 
-    // for (let i = 0; i < rideArray.length; i++) {     // LOOPING - RIDEARRAY > RIDE
-    //   let ride = rideArray[i]
-    //   levelOfService(ride)
-    //   renderRides(rideArray)
-    // }
+    for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
+      let ride = rideArray[i]
+      levelOfService(ride)
 
-
+      if (levelOfService(ride) == 'Noober Purple') {     // inherit levelOfService from levelOfService function
+        pushNewArray(ride)
+      }
+    }
   })
 
-  // Noober XL
-  document.querySelector("#noober-xl-filter").addEventListener("click", async function (event) {
+  document.querySelector("#noober-xl-filter").addEventListener("click", async function (event) {  // Noober XL
     console.log("Noober XL button clicked");
 
     // API Call
-    // let response = await fetch(`https://kiei451.com/api/rides.json`)
-    // let json = await response.json()
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
 
-    // let rideArray = json
+    let rideArray = json
 
-    // for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
-    //   let ride = rideArray[i]
-    //   levelOfService(ride)
-    //   renderRides(rideArray)
-    // }
+    for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
+      let ride = rideArray[i]
+      levelOfService(ride)
 
-
+      if (levelOfService(ride) == 'Noober XL') {     // inherit levelOfService from levelOfService function
+        pushNewArray(ride)
+      }
+    }
   })
 
-  // Noober X
-  document.querySelector("#noober-x-filter").addEventListener("click", async function (event) {
+  document.querySelector("#noober-x-filter").addEventListener("click", async function (event) {  // Noober X
     console.log("Noober X button clicked");
 
     // API Call
-    // let response = await fetch(`https://kiei451.com/api/rides.json`)
-    // let json = await response.json()
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
 
-    // let rideArray = json
+    let rideArray = json
 
-    // for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
-    //   let ride = rideArray[i]
-    //   levelOfService(ride)
-    //   renderRides(rideArray)
-    // }
+    for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
+      let ride = rideArray[i]
+      levelOfService(ride)
 
-
+      if (levelOfService(ride) == 'Noober X') {     // inherit levelOfService from levelOfService function
+        pushNewArray(ride)
+      }
+    }
   })
-
 })
 
