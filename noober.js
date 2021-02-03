@@ -77,16 +77,16 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log("All-Filter button clicked");
 
     // API Call
-    let response = await fetch(`https://kiei451.com/api/rides.json`)
-    let json = await response.json()
+    // let response = await fetch(`https://kiei451.com/api/rides.json`)
+    // let json = await response.json()
 
-    let rideArray = json
+    // let rideArray = json
 
-    for (let i = 0; i < rideArray.length; i++) {
-      let ride = rideArray[i]
-      levelOfService(ride)
-      renderRides(rideArray)
-    }
+    // for (let i = 0; i < rideArray.length; i++) {
+    //   let ride = rideArray[i]
+    //   levelOfService(ride)
+    //   renderRides(rideArray)
+    // }
 
 
   })
@@ -96,16 +96,16 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log("Noober Pool button clicked");
 
     // API Call
-    let response = await fetch(`https://kiei451.com/api/rides.json`)
-    let json = await response.json()
+    // let response = await fetch(`https://kiei451.com/api/rides.json`)
+    // let json = await response.json()
 
-    let rideArray = json
+    // let rideArray = json
 
-    for (let i = 0; i < rideArray.length; i++) {
-      let ride = rideArray[i]
-      levelOfService(ride)
-      renderRides(rideArray)
-    }
+    // for (let i = 0; i < rideArray.length; i++) {
+    //   let ride = rideArray[i]
+    //   levelOfService(ride)
+    //   renderRides(rideArray)
+    // }
 
 
   })
@@ -115,16 +115,16 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log("Noober Purple button clicked");
 
     // API Call
-    let response = await fetch(`https://kiei451.com/api/rides.json`)
-    let json = await response.json()
+    // let response = await fetch(`https://kiei451.com/api/rides.json`)
+    // let json = await response.json()
 
-    let rideArray = json
+    // let rideArray = json
 
-    for (let i = 0; i < rideArray.length; i++) {
-      let ride = rideArray[i]
-      levelOfService(ride)
-      renderRides(rideArray)
-    }
+    // for (let i = 0; i < rideArray.length; i++) {
+    //   let ride = rideArray[i]
+    //   levelOfService(ride)
+    //   renderRides(rideArray)
+    // }
 
 
   })
@@ -134,16 +134,16 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log("Noober XL button clicked");
 
     // API Call
-    let response = await fetch(`https://kiei451.com/api/rides.json`)
-    let json = await response.json()
+    // let response = await fetch(`https://kiei451.com/api/rides.json`)
+    // let json = await response.json()
 
-    let rideArray = json
+    // let rideArray = json
 
-    for (let i = 0; i < rideArray.length; i++) {
-      let ride = rideArray[i]
-      levelOfService(ride)
-      renderRides(rideArray)
-    }
+    // for (let i = 0; i < rideArray.length; i++) {
+    //   let ride = rideArray[i]
+    //   levelOfService(ride)
+    //   renderRides(rideArray)
+    // }
 
 
   })
@@ -153,16 +153,16 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log("Noober X button clicked");
 
     // API Call
-    let response = await fetch(`https://kiei451.com/api/rides.json`)
-    let json = await response.json()
+    // let response = await fetch(`https://kiei451.com/api/rides.json`)
+    // let json = await response.json()
 
-    let rideArray = json
+    // let rideArray = json
 
-    for (let i = 0; i < rideArray.length; i++) {
-      let ride = rideArray[i]
-      levelOfService(ride)
-      renderRides(rideArray)
-    }
+    // for (let i = 0; i < rideArray.length; i++) {
+    //   let ride = rideArray[i]
+    //   levelOfService(ride)
+    //   renderRides(rideArray)
+    // }
 
 
   })
