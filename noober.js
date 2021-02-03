@@ -1,3 +1,5 @@
+let newArray = [];
+
 function levelOfService(ride) { // FEED - RIDE
   let levelOfService
   if (ride.length > 1) {
@@ -71,6 +73,12 @@ function renderRides(ridesArray) { // FEED - RIDEARRAY
   }
 }
 
+function pushNewArray(ride) {
+  newArray.push(ride);
+  console.log(newArray);
+  renderRides(newArray)
+}
+
 window.addEventListener('DOMContentLoaded', function () {
   // All rides
   document.querySelector("#all-filter").addEventListener("click", async function (event) {
@@ -96,16 +104,21 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log("Noober Pool button clicked");
 
     // API Call
-    // let response = await fetch(`https://kiei451.com/api/rides.json`)
-    // let json = await response.json()
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
 
-    // let rideArray = json
+    let rideArray = json
 
-    // for (let i = 0; i < rideArray.length; i++) {
-    //   let ride = rideArray[i]
-    //   levelOfService(ride)
-    //   renderRides(rideArray)
-    // }
+    for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
+      let ride = rideArray[i]
+      levelOfService(ride)
+
+      if (levelOfService(ride) == 'Noober Pool') {     // inherit levelOfService from levelOfService function
+        pushNewArray(ride)
+      }
+
+      // renderRides(rideArray)
+    }
 
 
   })
@@ -120,7 +133,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // let rideArray = json
 
-    // for (let i = 0; i < rideArray.length; i++) {
+    // for (let i = 0; i < rideArray.length; i++) {     // LOOPING - RIDEARRAY > RIDE
     //   let ride = rideArray[i]
     //   levelOfService(ride)
     //   renderRides(rideArray)
@@ -139,7 +152,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // let rideArray = json
 
-    // for (let i = 0; i < rideArray.length; i++) {
+    // for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
     //   let ride = rideArray[i]
     //   levelOfService(ride)
     //   renderRides(rideArray)
@@ -158,7 +171,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // let rideArray = json
 
-    // for (let i = 0; i < rideArray.length; i++) {
+    // for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
     //   let ride = rideArray[i]
     //   levelOfService(ride)
     //   renderRides(rideArray)
