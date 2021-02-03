@@ -2,19 +2,12 @@ function levelOfService(ride) { // FEED - RIDE
   let levelOfService
   if (ride.length > 1) {
     levelOfService = 'Noober Pool'
-    console.log(levelOfService);
-
   } else if (ride[0].purpleRequested) {
     levelOfService = 'Noober Purple'
-    console.log(levelOfService);
-
   } else if (ride[0].numberOfPassengers > 3) {
     levelOfService = 'Noober XL'
-    console.log(levelOfService);
-
   } else {
     levelOfService = 'Noober X'
-    console.log(levelOfService);
   }
   return levelOfService
 }
@@ -87,6 +80,13 @@ window.addEventListener('DOMContentLoaded', function () {
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
 
+    let rideArray = json
+
+    for (let i = 0; i < rideArray.length; i++) {
+      let ride = rideArray[i]
+      levelOfService(ride)
+      renderRides(rideArray)
+    }
 
 
   })
