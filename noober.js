@@ -72,7 +72,7 @@ function renderRides(ridesArray) { // FEED - RIDEARRAY
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-  // YOUR CODE
+  // All rides
   document.querySelector("#all-filter").addEventListener("click", async function (event) {
     console.log("All-Filter button clicked");
 
@@ -90,5 +90,82 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
   })
+
+  // Noober Pool
+  document.querySelector("#noober-pool-filter").addEventListener("click", async function (event) {
+    console.log("Noober Pool button clicked");
+
+    // API Call
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
+
+    let rideArray = json
+
+    for (let i = 0; i < rideArray.length; i++) {
+      let ride = rideArray[i]
+      levelOfService(ride)
+      renderRides(rideArray)
+    }
+
+
+  })
+
+  // Noober Purple
+  document.querySelector("#noober-purple-filter").addEventListener("click", async function (event) {
+    console.log("Noober Purple button clicked");
+
+    // API Call
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
+
+    let rideArray = json
+
+    for (let i = 0; i < rideArray.length; i++) {
+      let ride = rideArray[i]
+      levelOfService(ride)
+      renderRides(rideArray)
+    }
+
+
+  })
+
+  // Noober XL
+  document.querySelector("#noober-xl-filter").addEventListener("click", async function (event) {
+    console.log("Noober XL button clicked");
+
+    // API Call
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
+
+    let rideArray = json
+
+    for (let i = 0; i < rideArray.length; i++) {
+      let ride = rideArray[i]
+      levelOfService(ride)
+      renderRides(rideArray)
+    }
+
+
+  })
+
+  // Noober X
+  document.querySelector("#noober-x-filter").addEventListener("click", async function (event) {
+    console.log("Noober X button clicked");
+
+    // API Call
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
+
+    let rideArray = json
+
+    for (let i = 0; i < rideArray.length; i++) {
+      let ride = rideArray[i]
+      levelOfService(ride)
+      renderRides(rideArray)
+    }
+
+
+  })
+
 })
 
