@@ -1,4 +1,4 @@
-function levelOfService(ride) {
+function levelOfService(ride) { // FEED - RIDE
   let levelOfService
   if (ride.length > 1) {
     levelOfService = 'Noober Pool'
@@ -19,22 +19,23 @@ function levelOfService(ride) {
   return levelOfService
 }
 
-function renderRides(ridesArray) {
-  for (let i = 0; i < ridesArray.length; i++) {
+function renderRides(ridesArray) { // FEED - RIDEARRAY
+
+  for (let i = 0; i < ridesArray.length; i++) {   // LOOPING - RIDEARRAY > RIDE
     let ride = ridesArray[i]
 
     // PRINTING - LEVEL OF SERVICE
-    document.querySelector('.rides').insertAdjacentHTML('beforeend', `
+    document.querySelector('.rides').insertAdjacentHTML('beforeend', ` 
       <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
         <i class="fas fa-car-side"></i>
         <span>${levelOfService(ride)}</span>
       </h1>
     `)
 
-    // setting border values
     let borderClass
     let backgroundClass
-    if (levelOfService(ride) == 'Noober Purple') {
+
+    if (levelOfService(ride) == 'Noober Purple') {     // inherit levelOfService from levelOfService function
       borderClass = 'border-purple-500'
       backgroundClass = 'bg-purple-600'
     } else {
@@ -42,8 +43,7 @@ function renderRides(ridesArray) {
       backgroundClass = 'bg-gray-600'
     }
 
-    // LOOPING - LEG
-    for (let i = 0; i < ride.length; i++) {
+    for (let i = 0; i < ride.length; i++) {     // LOOPING - RIDE > LEG
       let leg = ride[i]
 
       // PRINTING - LEG
