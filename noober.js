@@ -75,7 +75,6 @@ function renderRides(ridesArray) { // FEED - RIDEARRAY
 
 function pushNewArray(ride) {
   newArray.push(ride);
-  console.log(newArray);
   renderRides(newArray)
 }
 
@@ -98,14 +97,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
   })
 
-
   document.querySelector("#noober-pool-filter").addEventListener("click", async function (event) {   // Noober Pool
     console.log("Noober Pool button clicked");
 
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
-
     let rideArray = json
 
     for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
@@ -124,7 +121,6 @@ window.addEventListener('DOMContentLoaded', function () {
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
-
     let rideArray = json
 
     for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
@@ -143,7 +139,6 @@ window.addEventListener('DOMContentLoaded', function () {
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
-
     let rideArray = json
 
     for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
@@ -162,7 +157,6 @@ window.addEventListener('DOMContentLoaded', function () {
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
-
     let rideArray = json
 
     for (let i = 0; i < rideArray.length; i++) {    // LOOPING - RIDEARRAY > RIDE
