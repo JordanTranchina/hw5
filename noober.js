@@ -84,6 +84,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector("#all-filter").addEventListener("click", async function (event) {   // All rides
     console.log("All-Filter button clicked");
     document.querySelector('.rides').innerHTML = ""
+    newArray = [];
 
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
@@ -102,6 +103,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector("#noober-pool-filter").addEventListener("click", async function (event) {   // Noober Pool
     console.log("Noober Pool button clicked");
     document.querySelector('.rides').innerHTML = ""
+    newArray = [];
 
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
@@ -121,6 +123,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector("#noober-purple-filter").addEventListener("click", async function (event) {  // Noober Purple
     console.log("Noober Purple button clicked");
     document.querySelector('.rides').innerHTML = ""
+    newArray = [];
 
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
@@ -140,6 +143,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector("#noober-xl-filter").addEventListener("click", async function (event) {  // Noober XL
     console.log("Noober XL button clicked");
     document.querySelector('.rides').innerHTML = ""
+    newArray = [];
 
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
@@ -159,6 +163,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector("#noober-x-filter").addEventListener("click", async function (event) {  // Noober X
     console.log("Noober X button clicked");
     document.querySelector('.rides').innerHTML = ""
+    newArray = [];
 
     // API Call
     let response = await fetch(`https://kiei451.com/api/rides.json`)
