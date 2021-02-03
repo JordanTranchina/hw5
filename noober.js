@@ -2,12 +2,19 @@ function levelOfService(ride) {
   let levelOfService
   if (ride.length > 1) {
     levelOfService = 'Noober Pool'
+    console.log(levelOfService);
+
   } else if (ride[0].purpleRequested) {
     levelOfService = 'Noober Purple'
+    console.log(levelOfService);
+
   } else if (ride[0].numberOfPassengers > 3) {
     levelOfService = 'Noober XL'
+    console.log(levelOfService);
+
   } else {
     levelOfService = 'Noober X'
+    console.log(levelOfService);
   }
   return levelOfService
 }
@@ -16,6 +23,7 @@ function renderRides(ridesArray) {
   for (let i = 0; i < ridesArray.length; i++) {
     let ride = ridesArray[i]
 
+    // PRINTING - LEVEL OF SERVICE
     document.querySelector('.rides').insertAdjacentHTML('beforeend', `
       <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
         <i class="fas fa-car-side"></i>
@@ -23,6 +31,7 @@ function renderRides(ridesArray) {
       </h1>
     `)
 
+    // setting border values
     let borderClass
     let backgroundClass
     if (levelOfService(ride) == 'Noober Purple') {
@@ -33,9 +42,11 @@ function renderRides(ridesArray) {
       backgroundClass = 'bg-gray-600'
     }
 
+    // LOOPING - LEG
     for (let i = 0; i < ride.length; i++) {
       let leg = ride[i]
 
+      // PRINTING - LEG
       document.querySelector('.rides').insertAdjacentHTML('beforeend', `
         <div class="border-4 ${borderClass} p-4 my-4 text-left">
           <div class="flex">
@@ -67,7 +78,17 @@ function renderRides(ridesArray) {
   }
 }
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
   // YOUR CODE
+  document.querySelector("#all-filter").addEventListener("click", async function (event) {
+    console.log("All-Filter button clicked");
+
+    // API Call
+    let response = await fetch(`https://kiei451.com/api/rides.json`)
+    let json = await response.json()
+
+
+
+  })
 })
 

@@ -1,0 +1,111 @@
+[RIDESARRAY
+    [RIDE
+        {LEG
+            passengerDetails: {
+                first: "Thad",
+                last: "Farrell",
+                phoneNumber: "(989) 614-4016"
+            },
+            pickupLocation: {
+                address: "551 W Elm St",
+                city: "Chicago",
+                state: "IL",
+                zip: "60612"
+            },
+            dropoffLocation: {
+                address: "2550 S Wabash Ave",
+                city: "Chicago",
+                state: "IL",
+                zip: "60614"
+            },
+            numberOfPassengers: 1,
+            purpleRequested: false
+        },
+        {LEG
+            passengerDetails: {
+                first: "Russel",
+                last: "Gislason",
+                phoneNumber: "(254) 616-5796"
+            },
+            pickupLocation: {
+                address: "4848 N Damen Ave",
+                city: "Chicago",
+                state: "IL",
+                zip: "60625"
+            },
+            dropoffLocation: {
+                address: "142 E Ontario St",
+                city: "Chicago",
+                state: "IL",
+                zip: "60464"
+            },
+            numberOfPassengers: 1,
+            purpleRequested: false
+        }
+    ],
+    [RIDE
+        {LEG
+            passengerDetails: {
+                first: "Nick",
+                last: "Balistreri",
+                phoneNumber: "(347) 810-9184"
+            },
+            pickupLocation: {
+                address: "8211 S Langley Ave",
+                city: "Chicago",
+                state: "IL",
+                zip: "60642"
+            },
+            dropoffLocation: {
+                address: "4815 S Wood St",
+                city: "Chicago",
+                state: "IL",
+                zip: "60609"
+            },
+            numberOfPassengers: 1,
+            purpleRequested: false
+        },
+        {LEG
+            passengerDetails: {
+                first: "Colton",
+                last: "Farrell",
+                phoneNumber: "(443) 706-7530"
+            },
+            pickupLocation: {
+                address: "11601 W Touhy Ave",
+                city: "Chicago",
+                state: "IL",
+                zip: "60666"
+            },
+            dropoffLocation: {
+                address: "6011 N Kildare Ave",
+                city: "Chicago",
+                state: "IL",
+                zip: "60610"
+            },
+            numberOfPassengers: 1,
+            purpleRequested: false
+        },
+        {LEG
+            passengerDetails: {
+                first: "Maile",
+                last: "Dach",
+                phoneNumber: "(513) 386-2072"
+            },
+            pickupLocation: {
+                address: "820 W Polk St",
+                city: "Chicago",
+                state: "IL",
+                zip: "60101"
+            },
+            dropoffLocation: {
+                address: "6709 S Carpenter St",
+                city: "Chicago",
+                state: "IL",
+                zip: "60615"
+            },
+            numberOfPassengers: 1,
+            purpleRequested: false
+        }
+    ],
+]
